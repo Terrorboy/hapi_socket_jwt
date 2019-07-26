@@ -1,6 +1,13 @@
 <?php
 include_once('JWT.php');
 
+// JWT Enc/Dec
+function JwtEnc($type='e', $value=array(), $scret='', $alg='HS256') {
+	$JWT = new JWT();
+	if($type == 'e') return $JWT->encode($JWT->jsonEncode($value), $scret, $alg);
+	else return $JWT->decode($value, $scret, array($alg));
+}
+	
 $fp = fopen('secret.conf', 'r');
 $fr = fread($fp, 1000);
 fclose($fp);
