@@ -1,7 +1,7 @@
 module.exports = function(name, server, io) {
 	const jwt = require('jsonwebtoken')
 	const fs = require('fs')
-	const secretKey = fs.readFileSync('secret.conf', 'utf8') // 비밀키 :: scret.conf 를 수정 하세요.
+	const secretKey = fs.readFileSync('secret.conf', 'utf8') // 비밀키 :: secret.conf 를 수정 하세요.
 
 
 	// 소켓
