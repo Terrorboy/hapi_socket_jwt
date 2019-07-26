@@ -12,7 +12,7 @@
     - router/`main.js`
     > main 라우터 설정 파일입니다.
     - router/`memo.js`
-    > [GnuBoard cms](https://sir.kr) 에서 사용되었던 라우터 입니다.  
+    > [GnuBoard cms](https://sir.kr) 실시간 쪽지 플러그인에서 사용되었던 라우터 입니다.  
     > 인증은 JWT 방식을 사용 하며 secret key는 `secret.conf`에서 설정 합니다.
     - router/`test.js`
     > test 라우터 설정 파일입니다.
